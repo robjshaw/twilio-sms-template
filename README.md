@@ -4,6 +4,18 @@ Simple example of putting templating in front of Twilio's SMS API.
 
 !!! Currently missing an auth layer.
 
+Example cURL command (can copy into postman)
+
+```
+curl --location --request POST 'http://localhost:3000/send' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--data-urlencode 'template=template-1' \
+--data-urlencode 'firstname=Rob' \
+--data-urlencode 'department=Operations' \
+--data-urlencode 'incidentID=INC-002' \
+--data-urlencode 'phonenumber=+61422222515'
+```
+
 ## Configure .ENV
  
  * ACCOUNT_SID= Your primary Twilio account identifier - find this in the [Console](https://www.twilio.com/console)
