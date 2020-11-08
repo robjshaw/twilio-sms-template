@@ -13,7 +13,7 @@ curl --location --request POST 'http://localhost:3000/send' \
 --data-urlencode 'firstname=Rob' \
 --data-urlencode 'department=Operations' \
 --data-urlencode 'incidentID=INC-002' \
---data-urlencode 'phonenumber=+61422222515'
+--data-urlencode 'phonenumber=+61422xxxxxx'
 ```
 
 ## Configure .ENV
